@@ -6,10 +6,13 @@ git ls-files -s
 show the index
 
 git log
-check the history commit
+check the commit history
 
 git checkout -b <branch name> <tag name>
 create a new branch from a specific tag, then check it out
 
 git show
-Shows one or more objects (blobs, trees, tags and commits).
+Shows one or more objects (blobs, trees, tags and commits)
+
+git diff file
+show the file difference between workspace and repository
