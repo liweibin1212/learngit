@@ -8,6 +8,9 @@ show the index
 git log
 check the commit history
 
+git reflog
+check commit chang history, including reset change
+
 git checkout -b <branch name> <tag name>
 create a new branch from a specific tag, then check it out
 
@@ -16,3 +19,9 @@ Shows one or more objects (blobs, trees, tags and commits)
 
 git diff file
 show the file difference between workspace and repository
+
+git reset --hard HEAD^
+HEAD^ roll back to last version
+HEAD^^ roll back to last last version
+HEAD~100 roll back to last 100 version
+xxxx roll back to specific hash code version, can use 'git log' to search
