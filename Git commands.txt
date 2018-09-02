@@ -1,0 +1,15 @@
+﻿git cat-file -p xxxx  
+git cat-file -t xxxx 
+xxxx is the prefix of an object hash code, this command will show the value of that code point to(-p), the type(-t)
+
+git ls-files -s
+show the index
+
+git log
+check the history commit
+
+git checkout -b <branch name> <tag name>
+create a new branch from a specific tag, then check it out
+
+git show
+Shows one or more objects (blobs, trees, tags and commits).
