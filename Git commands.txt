@@ -25,3 +25,7 @@ HEAD^ roll back to last version
 HEAD^^ roll back to last last version
 HEAD~100 roll back to last 100 version
 xxxx roll back to specific hash code version, can use 'git log' to search
+
+
+git add  'add a file in stage
+git rm   'remove a file in stage
