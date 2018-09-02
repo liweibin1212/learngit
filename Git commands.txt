@@ -29,3 +29,7 @@ xxxx roll back to specific hash code version, can use 'git log' to search
 
 git add  'add a file in stage
 git rm   'remove a file in stage
+
+git remote 'show remote info
+git remote 'show remote info with https
+git remote add origin https://github.com/liweibin1212/learngit.git
