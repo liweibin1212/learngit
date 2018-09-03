@@ -11,9 +11,6 @@ check the commit history
 git reflog
 check commit chang history, including reset change
 
-git checkout -b <branch name> <tag name>
-create a new branch from a specific tag, then check it out
-
 git show
 Shows one or more objects (blobs, trees, tags and commits)
 
@@ -27,9 +24,46 @@ HEAD~100 roll back to last 100 version
 xxxx roll back to specific hash code version, can use 'git log' to search
 
 
-git add  'add a file in stage
-git rm   'remove a file in stage
+git add  	'add a file in stage
+git rm   	'remove a file in stage
 
 git remote 'show remote info
 git remote 'show remote info with https
 git remote add origin https://github.com/liweibin1212/learngit.git
+
+git clone https://github.com/liweibin1212/learngit.git
+
+
+git checkout -b <branch name> <tag name>
+create a new branch from a specific tag, then check it out
+it is equals to below 2 commands
+git branch <branch name>
+git checkout <branch name>
+
+git branch dev 		'create dev if no existing'
+git branch -d dev 	'delete a branch'
+git checkout dev 	'chang to branch dev
+
+
+if brancha is earlier than branchb (brancha is branchb's ancestors)
+1. git checkout brancha
+git merge branchb
+'Fast-forward'
+Before
+head => brancha => a1(commit)
+		branchb => b1(commit)
+		
+After
+head => brancha => b1(commit)
+		branchb => b1(commit)
+		
+2. git checkout branchb
+git merge brancha
+'Already up to date' nothing happen
+Before
+		brancha => a1(commit)
+head => branchb => b1(commit)
+		
+After
+		brancha => a1(commit)
+head => branchb => c1(commit)
