@@ -7,6 +7,8 @@ show the index
 
 git log
 check the commit history
+git log --graph --pretty=oneline --abbrev-commit
+show commit history in graph
 
 git reflog
 check commit chang history, including reset change
@@ -66,3 +68,4 @@ head => branchb => b1(commit)
 After
 		brancha => a1(commit)
 head => branchb => b1(commit)
+
