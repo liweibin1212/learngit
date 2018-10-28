@@ -1,4 +1,7 @@
-﻿git cat-file -p xxxx  
+﻿cat .git/HEAD
+cat .git/refs/heads/master
+
+git cat-file -p xxxx  
 git cat-file -t xxxx 
 xxxx is the prefix of an object hash code, this command will show the value of that code point to(-p), the type(-t)
 
@@ -33,6 +36,10 @@ git remote 'show remote info with https
 git remote add origin https://github.com/liweibin1212/learngit.git
 
 git clone https://github.com/liweibin1212/learngit.git
+
+
+git commit -m 'commit comment'
+git push -u origin master
 
 
 git checkout -b <branch name> <tag name>
